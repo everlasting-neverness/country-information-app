@@ -17,17 +17,21 @@ function createConutryBlock(country) {
   let countryContainer = document.createElement("div");
   countryContainer.classList.add("country-container");
   let name = document.createElement("h3");
-  name.classList.add("country-name");
-  name.textContent = country.name;
+  name.innerHTML = `<span class="country-container-label">Country: </span>${
+    country.name
+  }`;
   let capital = document.createElement("h4");
-  capital.classList.add("country-capital");
-  capital.textContent = country.capital;
+  capital.innerHTML = `<span class="country-container-label">Capital: </span>${
+    country.capital
+  }`;
   let area = document.createElement("h4");
-  area.classList.add("country-area");
-  area.textContent = country.area;
+  area.innerHTML = `<span class="country-container-label">Area: </span>${
+    country.area
+  }`;
   let region = document.createElement("h4");
-  region.classList.add("country-region");
-  region.textContent = country.region;
+  region.innerHTML = `<span class="country-container-label">Region: </span>${
+    country.region
+  }`;
   let flag = document.createElement("div");
   flag.classList.add("country-flag");
   let img = document.createElement("img");
